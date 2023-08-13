@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(./fonts/FreeSans.otf);
+}
+@font-face {
+  font-family: Insignia-Raoman;
+  src: url(./fonts/Insignia\ Roman.ttf);
+}
+
+/* Reset some default styling */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica-Neue;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align items */
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 40px;
+}
+
+.navbar-logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Vertically align logo and name */
+}
+
+.navbar-name {
+  font-family: Insignia-Raoman;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+.navbar-buttons ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #92c13c;
+  transition: color 0.3s ease;
+}
+
+.navbar-buttons button {
+  padding: 13px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-buttons li {
+  margin-right: 20px;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #92c13c;
+  /* border: 1px solid black; */
+  text-decoration: none;
+}
+
+.get-started-button {
+  /* background-color: white; */
+  background-color: #92c13c;
+  color: white;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Hover effects */
+.navbar-links a:hover {
+  color: rgb(102, 125, 99);
+}
+
+.navbar-buttons a:hover {
+  color: rgb(102, 125, 99);
+}
+
+.navbar-buttons button:hover {
+  background-color: rgb(114, 170, 10);
+  color: white;
+}
+
+/* Add this at the end of your existing CSS */
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+}
+
+.hamburger-menu i {
+  font-size: 24px;
+  color: #92c13c;
+}
+
+/* Hamburger menu content styles */
+.hamburger-menu-content {
+  display: none; /* Hide by default */
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 80px; /* Adjust this to your needs */
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  z-index: 999;
+
+  /* Add the following animation-related properties */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.hamburger-menu-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hamburger-menu-content li {
+  margin: 10px 0;
+}
+
+.hamburger-menu-content a {
+  text-decoration: none;
+  color: #92c13c;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.hamburger-menu-content a:hover {
+  color: rgb(102, 125, 99);
+}

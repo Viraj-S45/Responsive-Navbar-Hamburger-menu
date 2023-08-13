@@ -1,0 +1,119 @@
+/* responsive.css */
+
+/* Override hamburger menu position */
+.hamburger-menu {
+    display: flex; /* Show the hamburger menu icon */
+    justify-content: flex-end; /* Align it to the right */
+    margin-left: auto; /* Pushes the hamburger to the right */
+  }
+  
+  /* Display the hamburger menu content when active */
+  .hamburger-menu.active + .hamburger-menu-content {
+    display: block;
+  }
+  
+  /* Adjust the styles for the hamburger menu content in mobile view */
+  @media (max-width: 768px) {
+    .hide {
+        display: none;
+      }
+    .navbar-links {
+        display: none;
+    }
+    .navbar-buttons {
+        display: none;
+    }
+    .navbar-logo {
+        justify-content: space-between;
+      }
+    
+      .hamburger-menu {
+        /* display: flex; */
+        /* margin-right: 20px; */
+        margin-left: auto;
+        /* display: flex; */
+    /* align-items: center; */
+        /* justify-content: flex-end; */
+        /* margin-left: auto; */
+      }
+    .hamburger-menu-content {
+      display: none;
+      background-color: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      width: 200px;
+      padding: 10px;
+      z-index: 999;
+      
+      /* Set a specific height to accommodate the content */
+      max-height: 300px; /* Adjust this value as needed */
+      overflow-y: auto; /* Add scrolling if the content exceeds the height */
+    }
+  
+    /* Rest of your hamburger menu content styles */
+  
+    /* Make sure the content is displayed properly */
+    .hamburger-menu-content.active {
+      display: block;
+    }
+  }
+  @media (min-width: 1014px) {
+            .hamburger-menu {
+                display: none;
+            }
+  }
+
+  @media (max-width: 1014px) {
+    .hide {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+        .remove {
+              display: none;
+            }
+    }
+
+
+
+
+
+    @media (max-width: 1014px) {
+       
+        .navbar-logo {
+            justify-content: space-between;
+          }
+        
+          .hamburger-menu {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+          }
+        .hamburger-menu-content {
+          display: none;
+          background-color: white;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          position: absolute;
+          top: 80px;
+          right: 20px;
+          width: 200px;
+          padding: 10px;
+          z-index: 999;
+          
+          /* Set a specific height to accommodate the content */
+          max-height: 300px; /* Adjust this value as needed */
+          overflow-y: auto; /* Add scrolling if the content exceeds the height */
+        }
+      
+        /* Rest of your hamburger menu content styles */
+      
+        /* Make sure the content is displayed properly */
+        .hamburger-menu-content.active {
+          display: block;
+        }
+
+       
+      }
