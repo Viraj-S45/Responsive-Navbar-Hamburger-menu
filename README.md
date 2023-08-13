@@ -59,7 +59,7 @@ This navbar provides a clean and elegant navigation solution for your website. I
 2. Open the index.html file in your preferred web browser to see the navbar in action.
 ## Acknowledgements
 
- - [Boxicons](https://boxicons.com/) for the icon set used in teh sidebar.
+ - [Boxicons](https://boxicons.com/) for the icon set used in the sidebar.
 
 
 
