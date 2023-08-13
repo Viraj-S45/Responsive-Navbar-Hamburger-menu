@@ -15,9 +15,11 @@ This navbar provides a clean and elegant navigation solution for your website. I
 **Mobile:**
 
 ![App Screenshot](https://i.imgur.com/QFPvkcB.jpg)
+
 **Tablet:**
 
 ![App Screenshot](https://i.imgur.com/VAROniA.jpg)
+
 **Laptop / Desktop:**
 
 ![App Screenshot](https://i.imgur.com/tuf5jRH.jpg)
